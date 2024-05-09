@@ -7,7 +7,7 @@ export async function fetchPixabayData(query) {
     const url = `https://pixabay.com/api/?key=${apiKey}&q=${query}&image_type=photo&orientation=horizontal&safesearch=true`;
     const response = await fetch(url);
     if (!response.ok) {
-      iziToast.warning({
+      iziToast.error({
         title: 'Sorry',
         message:
           'There are no images matching your search query. Please try again!',
