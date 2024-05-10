@@ -22,7 +22,7 @@ input.addEventListener('input', () => {
 form.addEventListener('submit', event => {
   event.preventDefault();
 
-  gallery.innerHTML = '';
+  gallery.textContent = '';
 
   const query = input.value.trim();
 
